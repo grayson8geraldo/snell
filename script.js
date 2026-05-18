@@ -101,10 +101,13 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// ============ ANALYTICS HOOK (placeholder) ============
+// ============ ANALYTICS HOOK (consent-gated) ============
+// These only fire if the user accepted marketing cookies. See consent.js.
 document.querySelectorAll('a[href*="t.me"]').forEach(a => {
   a.addEventListener('click', () => {
+    if (!window.snellHasConsent || !window.snellHasConsent()) return;
     if (window.fbq) window.fbq('track', 'Lead');
+    if (window.ttq) window.ttq.track('ClickButton');
     if (window.gtag) window.gtag('event', 'cta_click', { method: 'telegram' });
   });
 });
