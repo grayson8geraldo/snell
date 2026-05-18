@@ -85,21 +85,6 @@ setInterval(() => {
   while (feedEl.children.length > 8) feedEl.removeChild(feedEl.lastChild);
 }, 2200);
 
-// ============ COUNTDOWN ============
-const countdownEl = document.getElementById('countdown');
-let total = 2 * 3600 + 14 * 60 + 33;
-function tickCountdown() {
-  if (!countdownEl) return;
-  if (total <= 0) total = 6 * 3600;
-  const h = String(Math.floor(total / 3600)).padStart(2, '0');
-  const m = String(Math.floor((total % 3600) / 60)).padStart(2, '0');
-  const s = String(total % 60).padStart(2, '0');
-  countdownEl.textContent = `${h}:${m}:${s}`;
-  total--;
-}
-tickCountdown();
-setInterval(tickCountdown, 1000);
-
 // ============ STICKY CTA REVEAL ============
 const stickyCta = document.querySelector('.sticky-cta');
 const heroSection = document.querySelector('.hero');
