@@ -16,10 +16,10 @@ setInterval(() => {
 // ============ PLAYER COUNTER ============
 const playerCountEl = document.getElementById('playerCount');
 const playerBigEl = document.getElementById('playerBig');
-let players = 12847;
+let players = 38426;
 setInterval(() => {
-  players += Math.floor(Math.random() * 5) - 1;
-  if (players < 12500) players = 12847;
+  players += Math.floor(Math.random() * 7) - 2;
+  if (players < 38000) players = 38426;
   const formatted = formatNL(players).replace(/\./g, ' ');
   if (playerCountEl) playerCountEl.textContent = formatted;
   if (playerBigEl) playerBigEl.textContent = formatted;
