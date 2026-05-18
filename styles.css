@@ -362,6 +362,40 @@ img,svg{display:block;max-width:100%}
   .hero-title{font-size:64px}
 }
 
+/* ============ LEGAL / CONTACT PAGES ============ */
+.legal{padding:48px 0 80px;background:linear-gradient(180deg,#1a0b2e 0%,#0d0418 100%);min-height:calc(100vh - 160px)}
+.legal .container{max-width:720px}
+.legal-back{display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);font-size:13px;margin-bottom:18px;transition:color .15s ease}
+.legal-back:hover{color:var(--gold)}
+.legal h1{font-size:clamp(28px,6vw,40px);font-weight:900;letter-spacing:-.02em;margin-bottom:8px;line-height:1.1}
+.legal .updated{color:var(--text-dim);font-size:13px;margin-bottom:32px;display:block}
+.legal h2{font-size:18px;font-weight:800;margin:28px 0 10px;letter-spacing:-.01em;color:#fff}
+.legal h2 .num{color:var(--gold);margin-right:8px;font-variant-numeric:tabular-nums}
+.legal p,.legal li{font-size:14.5px;color:rgba(255,255,255,.78);line-height:1.7}
+.legal p{margin-bottom:12px}
+.legal ul{padding-left:20px;margin-bottom:12px}
+.legal li{margin-bottom:6px}
+.legal strong{color:#fff;font-weight:600}
+.legal a{color:var(--gold);text-decoration:underline;text-decoration-color:rgba(245,200,67,.4);text-underline-offset:3px}
+.legal a:hover{text-decoration-color:var(--gold)}
+.legal-card{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:16px;padding:20px;margin:20px 0}
+.legal-card h3{font-size:14px;font-weight:700;margin-bottom:6px;color:#fff}
+.legal-card p{font-size:13px;margin:0;color:var(--text-dim)}
+
+.contact-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:24px}
+@media (min-width:720px){.contact-grid{grid-template-columns:repeat(2,1fr)}}
+.contact-card{
+  background:rgba(255,255,255,.04);border:1px solid var(--border);
+  border-radius:18px;padding:22px;
+  display:flex;flex-direction:column;gap:6px;
+  transition:border-color .2s ease,background .2s ease;
+}
+.contact-card:hover{border-color:rgba(245,200,67,.4);background:rgba(245,200,67,.05)}
+.contact-card .ico{font-size:22px;margin-bottom:6px}
+.contact-card h3{font-size:15px;font-weight:700}
+.contact-card p{font-size:13px;color:var(--text-dim);margin:0}
+.contact-card .link{color:var(--gold);font-weight:600;font-size:14px;margin-top:6px}
+
 /* Reduce motion */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
