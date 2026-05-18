@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#1a0b2e" />
+<title>Snell Coin — De Nederlandse Telegram-economie</title>
+<meta name="description" content="Snell Coin is een Telegram-gebaseerde tap-economie. Verzamel SNL, upgrade je perks en bereid je voor op de listing. Speel gratis vanaf je telefoon." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ TOP BANNER ============ -->
+<div class="top-banner">
+  <span class="pulse-dot"></span>
+  <span><strong>Live in Nederland</strong> · Pre-listing bonus actief tot middernacht</span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-coin"></div>
+      <span>Snell <em>Coin</em></span>
+    </div>
+    <a href="#cta" class="nav-cta">Spelen →</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-badge">
+      <span class="flag">🇳🇱</span>
+      <span>Speciaal voor Nederland · v2.1</span>
+    </div>
+
+    <h1 class="hero-title">
+      Verdien <span class="gold">Snell Coins</span><br />
+      vanuit je <span class="gold">Telegram</span>.
+    </h1>
+
+    <p class="hero-sub">
+      De eerste Nederlandse tap-economie op Telegram. Verzamel SNL, upgrade je perks en sta vooraan bij de listing.
+    </p>
+
+    <!-- Live coin showcase -->
+    <div class="coin-stage">
+      <div class="coin-shadow"></div>
+      <div class="coin">
+        <svg viewBox="0 0 200 200" class="coin-svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="gFace" cx="50%" cy="40%" r="65%">
+              <stop offset="0%" stop-color="#FFF4B8"/>
+              <stop offset="55%" stop-color="#F5C843"/>
+              <stop offset="100%" stop-color="#B07A14"/>
+            </radialGradient>
+            <linearGradient id="gEdge" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFD75A"/>
+              <stop offset="100%" stop-color="#8A5A0A"/>
+            </linearGradient>
+          </defs>
+          <polygon points="100,8 138,18 168,42 188,78 192,118 178,156 148,182 108,192 68,188 36,168 14,134 8,94 22,54 54,22 92,10" fill="url(#gEdge)"/>
+          <circle cx="100" cy="100" r="74" fill="url(#gFace)"/>
+          <g stroke="#FFF6C2" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 2px 0 #8A5A0A)">
+            <path d="M100 55 C 75 80, 75 110, 100 135 C 125 110, 125 80, 100 55 Z"/>
+            <path d="M70 110 C 85 90, 100 115, 130 110 C 115 130, 85 130, 70 110 Z"/>
+            <path d="M130 110 C 115 90, 100 115, 70 110 C 85 130, 115 130, 130 110 Z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="coin-counter">
+        <div class="coin-counter-num" id="liveBalance">753.904</div>
+        <div class="coin-counter-label">SNL gemiddeld saldo · update <span id="lastUpdate">nu</span></div>
+      </div>
+    </div>
+
+    <a href="#cta" class="btn btn-primary btn-hero">
+      <span>Start gratis op Telegram</span>
+      <span class="btn-arrow">→</span>
+    </a>
+
+    <div class="hero-trust">
+      <div class="trust-item"><strong id="playerCount">12 847</strong><span>spelers online · NL</span></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><strong>4.8 ★</strong><span>2 314 reviews</span></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><strong>0 €</strong><span>om te starten</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ECONOMY REVEAL ============ -->
+<section class="section" id="economy">
+  <div class="container">
+    <div class="eyebrow">De economie</div>
+    <h2 class="section-title">Wat is een <span class="gold">Snell Coin</span> eigenlijk?</h2>
+    <p class="section-lead">
+      SNL is de in-game token van Snell. Elke tap voegt SNL toe aan je saldo. Je saldo bepaalt je positie op de Nederlandse ranglijst — en je aandeel bij de listing.
+    </p>
+
+    <div class="econ-grid">
+      <div class="econ-card">
+        <div class="econ-num">21 000 000 000</div>
+        <div class="econ-label">Totale max supply</div>
+        <p>Vaste hoeveelheid SNL. Geen bijdrukken, geen verwatering.</p>
+      </div>
+      <div class="econ-card">
+        <div class="econ-num">68%</div>
+        <div class="econ-label">Naar spelers</div>
+        <p>Het grootste deel van de supply gaat rechtstreeks naar actieve spelers — geen pre-sale voor insiders.</p>
+      </div>
+      <div class="econ-card">
+        <div class="econ-num">Q3 2026</div>
+        <div class="econ-label">Geplande TGE</div>
+        <p>Token Generation Event en exchange-listing. Je in-game saldo bepaalt je airdrop-portie.</p>
+      </div>
+      <div class="econ-card highlight">
+        <div class="econ-num">1 SNL</div>
+        <div class="econ-label">= 1 punt nu, ? straks</div>
+        <p>Wat een coin straks waard is, hangt af van de markt. Wie nu het meeste verzamelt, krijgt straks de grootste portie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MECHANIC DETAIL ============ -->
+<section class="section section-dark" id="how">
+  <div class="container">
+    <div class="eyebrow">Zo werkt het</div>
+    <h2 class="section-title">Drie tikken op je scherm.<br /><span class="gold">Dat is het.</span></h2>
+
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">01</div>
+        <h3>Tap om te verdienen</h3>
+        <p>Elke tap = 1 SNL (basis). Je kunt tot 500 keer per energiecyclus tappen. Energie laadt automatisch op met 1 punt per 3 seconden.</p>
+        <div class="energy-demo">
+          <div class="lightning">⚡</div>
+          <div class="energy-bar-wrap">
+            <div class="energy-bar" id="energyBar"></div>
+          </div>
+          <span class="energy-num" id="energyNum">488/500</span>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num">02</div>
+        <h3>Upgrade je perks</h3>
+        <p>Geef SNL uit aan upgrades en verdien meer per tap, of laat je coin automatisch groeien terwijl je offline bent.</p>
+        <div class="perks-list">
+          <div class="perk"><div class="perk-icon">🥇</div><div class="perk-info"><strong>Multi-Tap +1</strong><span>Verdien 2 SNL per tap</span></div><span class="perk-cost">2 500 SNL</span></div>
+          <div class="perk"><div class="perk-icon">🔋</div><div class="perk-info"><strong>Energy Limit +500</strong><span>Tap 1 000 keer per cyclus</span></div><span class="perk-cost">5 000 SNL</span></div>
+          <div class="perk"><div class="perk-icon">🤖</div><div class="perk-info"><strong>Auto-Bot 12u</strong><span>Verdient ook als je slaapt</span></div><span class="perk-cost">25 000 SNL</span></div>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num">03</div>
+        <h3>Klim op de Nederlandse ranglijst</h3>
+        <p>Top 1% bij de listing krijgt een <strong>10× bonus-multiplier</strong>. Nodig vrienden uit voor +25 000 SNL per actieve referral.</p>
+        <div class="leaderboard">
+          <div class="lb-row gold-bg"><span class="lb-pos">#1</span><span class="lb-name">Mark · Amsterdam</span><span class="lb-bal">14.2M SNL</span></div>
+          <div class="lb-row"><span class="lb-pos">#2</span><span class="lb-name">Lieke · Utrecht</span><span class="lb-bal">11.8M SNL</span></div>
+          <div class="lb-row"><span class="lb-pos">#3</span><span class="lb-name">Jeroen · Rotterdam</span><span class="lb-bal">9.6M SNL</span></div>
+          <div class="lb-row dim"><span class="lb-pos">#…</span><span class="lb-name">Jij?</span><span class="lb-bal">— SNL</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF / LIVE ACTIVITY ============ -->
+<section class="section" id="social">
+  <div class="container">
+    <div class="eyebrow">Live in Nederland</div>
+    <h2 class="section-title"><span id="playerBig">12 847</span> <span class="gold">spelen nu</span></h2>
+    <p class="section-lead">Snell groeit met gemiddeld <strong>+1 240 nieuwe Nederlandse spelers per dag</strong>. Een korte greep uit de afgelopen minuten:</p>
+
+    <div class="activity-feed" id="activityFeed">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="reviews">
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p>"Begon als grapje tijdens een dienst, een paar weken later zat ik op 4M SNL. Werkt gewoon, geen onzin."</p>
+        <div class="review-author"><div class="avatar a1"></div><div><strong>Sander, 31</strong><span>Eindhoven</span></div></div>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p>"Eindelijk een crypto-project waar je niets in hoeft te leggen. Gewoon tappen tijdens m'n koffie. Mijn vriend kreeg de listing al mee bij een ander project, ik wil deze niet missen."</p>
+        <div class="review-author"><div class="avatar a2"></div><div><strong>Annelies, 38</strong><span>Den Haag</span></div></div>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★☆</div>
+        <p>"De auto-bot perk verdient zichzelf in 1 nacht terug. Slim opgezet, goed Nederlands."</p>
+        <div class="review-author"><div class="avatar a3"></div><div><strong>Tom, 27</strong><span>Groningen</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOFT FINANCIAL FRAMING ============ -->
+<section class="section section-dark" id="value">
+  <div class="container">
+    <div class="eyebrow">Wat het kan opleveren</div>
+    <h2 class="section-title">Coins nu zijn <span class="gold">posities later</span>.</h2>
+    <p class="section-lead">
+      Bij vergelijkbare Telegram tap-economieën (Notcoin, Hamster Kombat) kregen vroege spelers bij de listing een airdrop met een marktwaarde van honderden tot duizenden euro's. Geen garantie — wel een patroon.
+    </p>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-num gold">€ 0</div>
+        <div class="value-label">Inleg</div>
+        <p>Snell is en blijft gratis. Geen creditcard, geen wallet-setup om te beginnen.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num gold">~ 8 min</div>
+        <div class="value-label">Per dag</div>
+        <p>Gemiddelde tijdsinvestering van een top-10% speler. Tijdens je koffie of trein.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num gold">1 : 1</div>
+        <div class="value-label">Saldo → airdrop</div>
+        <p>Je in-game SNL-saldo is direct gekoppeld aan je portie bij de TGE-distributie.</p>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Belangrijk:</strong> Snell Coin is een spel. De waarde van een eventuele toekomstige token is afhankelijk van marktomstandigheden en kan ook nul zijn. Speel niet om geld te verdienen — speel omdat het leuk is, en zie de listing als bonus. Niet bedoeld als financieel advies. 18+.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="eyebrow">Veelgestelde vragen</div>
+    <h2 class="section-title">Nog twijfels? <span class="gold">Logisch.</span></h2>
+
+    <details class="faq-item" open>
+      <summary>Moet ik iets betalen om te starten?</summary>
+      <p>Nee. Snell Coin is volledig gratis. Je hebt alleen Telegram nodig (gratis app) en je telefoon. Er is geen in-app aankoop verplicht.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is mijn data en mijn Telegram-account veilig?</summary>
+      <p>Snell draait als officiële Telegram Mini-App. We hebben geen toegang tot je berichten, contacten of wachtwoord. Alleen je publieke Telegram-naam en avatar.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Wanneer kan ik mijn SNL omzetten?</summary>
+      <p>De TGE (Token Generation Event) staat gepland voor Q3 2026. Op dat moment wordt je in-game saldo omgezet in echte SNL op de blockchain en gelist op exchanges.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Werkt het ook als ik 25+ ben en niets van crypto weet?</summary>
+      <p>Ja. De meeste van onze Nederlandse spelers zijn tussen de 27 en 45 jaar. Je hoeft niets te weten van crypto — als je een telefoon kunt bedienen, kun je Snell spelen.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Hoeveel tijd kost het echt?</summary>
+      <p>5–10 minuten per dag is voldoende om in de top 25% van Nederland te blijven. De auto-bot perk verdient daarnaast 12 uur lang door terwijl je iets anders doet.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section cta-final" id="cta">
+  <div class="container narrow center">
+    <div class="cta-coin">
+      <svg viewBox="0 0 200 200" class="coin-svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="gFace2" cx="50%" cy="40%" r="65%">
+            <stop offset="0%" stop-color="#FFF4B8"/>
+            <stop offset="55%" stop-color="#F5C843"/>
+            <stop offset="100%" stop-color="#B07A14"/>
+          </radialGradient>
+          <linearGradient id="gEdge2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFD75A"/>
+            <stop offset="100%" stop-color="#8A5A0A"/>
+          </linearGradient>
+        </defs>
+        <polygon points="100,8 138,18 168,42 188,78 192,118 178,156 148,182 108,192 68,188 36,168 14,134 8,94 22,54 54,22 92,10" fill="url(#gEdge2)"/>
+        <circle cx="100" cy="100" r="74" fill="url(#gFace2)"/>
+        <g stroke="#FFF6C2" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 2px 0 #8A5A0A)">
+          <path d="M100 55 C 75 80, 75 110, 100 135 C 125 110, 125 80, 100 55 Z"/>
+          <path d="M70 110 C 85 90, 100 115, 130 110 C 115 130, 85 130, 70 110 Z"/>
+          <path d="M130 110 C 115 90, 100 115, 70 110 C 85 130, 115 130, 130 110 Z"/>
+        </g>
+      </svg>
+    </div>
+    <h2 class="section-title">Begin met je <span class="gold">eerste 5 000 SNL</span>.</h2>
+    <p class="section-lead">Welkomstbonus actief — alleen vandaag voor Nederlandse spelers. Geen creditcard, geen download via de App Store.</p>
+
+    <a href="https://t.me/SnellCoinBot" class="btn btn-primary btn-cta" id="mainCta">
+      <span class="tg-icon">✈</span>
+      <span>Open Snell op Telegram</span>
+      <span class="btn-arrow">→</span>
+    </a>
+
+    <div class="cta-meta">
+      <span>🔒 Veilig · officiële Telegram Mini-App</span>
+      <span>🇳🇱 Nederlandstalig support</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">
+      <div class="logo-coin small"></div>
+      <span>Snell Coin</span>
+    </div>
+    <p class="footer-disclaimer">
+      Snell Coin is een spel binnen Telegram. Deelname is gratis en niet bedoeld als financiële investering. De waarde van toekomstige tokens is afhankelijk van marktomstandigheden. Speel verantwoord. 18+. © 2026 Snell Labs.
+    </p>
+    <div class="footer-links">
+      <a href="#">Privacy</a><span>·</span>
+      <a href="#">Voorwaarden</a><span>·</span>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-left">
+      <div class="sticky-cta-coin"></div>
+      <div>
+        <strong>+5 000 SNL bonus</strong>
+        <span>verloopt over <span id="countdown">02:14:33</span></span>
+      </div>
+    </div>
+    <a href="https://t.me/SnellCoinBot" class="btn btn-primary btn-sm">Spelen →</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
